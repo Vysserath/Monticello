@@ -1,3 +1,31 @@
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Source Sans Pro', sans-serif;
+@import 'mixins';
+@import 'var';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $back-color;
+    margin: 0;
+    padding: 0;
+    color: $grey;
+    font-size: 11px;
+    font-family: 'Old Standard TT', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
