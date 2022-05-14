@@ -8,12 +8,11 @@
 }
 
 body {
-    background-color: $back-color;
     margin: 0;
     padding: 0;
-    color: $grey;
     font-size: 11px;
-    font-family: 'Old Standard TT', serif;
+    font-family: $open-sans;
+    color: $navy;
 }
 
 a {
@@ -28,4 +27,3 @@ img {
 ul {
     list-style: none;
 }
-
