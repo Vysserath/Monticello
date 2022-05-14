@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'var';
+@import 'block/gallery';
 
 *,
 *::before,
@@ -26,4 +27,16 @@ img {
 
 ul {
     list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+
+    &_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
