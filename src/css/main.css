@@ -649,7 +649,7 @@
 }
 
 .nav {
-  margin: 0 -120px;
+  margin: 0 -70px;
 }
 @media (max-width: 767px) {
   .nav {
@@ -712,6 +712,11 @@
   border-radius: 5px;
   background-color: white;
 }
+@media (max-width: 767px) {
+  .nav-item:hover .nav-link::before {
+    display: none;
+  }
+}
 .nav-item:before {
   content: "";
   top: 3px;
@@ -721,6 +726,11 @@
   height: 10px;
   border: 1px solid white;
   border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .nav-item:before {
+    display: none;
+  }
 }
 .nav-link {
   color: #fff;

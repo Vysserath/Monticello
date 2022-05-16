@@ -45,7 +45,7 @@
 }
 
 .nav{
-    margin: 0 -120px;
+    margin: 0 -70px;
     @include breakpoint ('md'){
         display: flex;
         flex-direction: column;
@@ -88,6 +88,10 @@
             border: 1px solid white;
             border-radius: 5px;
             background-color: white;
+
+            @include breakpoint ('md'){
+                display: none;
+            }
         }
 
         &:before {
@@ -99,6 +103,10 @@
             height: 10px;
             border: 1px solid white;
             border-radius: 5px;
+
+            @include breakpoint ('md'){
+                display: none;
+            }
         }
     }
 
