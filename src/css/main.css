@@ -1,0 +1,328 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.map {
+  width: 100%;
+  height: 700px;
+  -webkit-filter: grayscale(0.6);
+          filter: grayscale(0.6);
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 44px;
+  line-height: 1.2;
+  color: #2c4058;
+}
+
+.main-title {
+  position: relative;
+  text-align: center;
+  padding: 40px 0 25px 0;
+}
+.main-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background: #2c4058;
+}
+
+.logo {
+  width: 241px;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  display: block;
+  background: inherit;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.btn_outline {
+  border-color: #2c4058;
+}
+.btn_outline:hover {
+  background: #2c4058;
+  color: #fff;
+  border-color: #2c4058;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  padding-top: 241px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  color: #fff;
+}
+.footer .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.footer__copyright {
+  font-size: 14px;
+  padding-top: 40px;
+}
+@media (max-width: 1023px) {
+  .footer__copyright {
+    text-align: center;
+  }
+}
+
+.contacts {
+  position: absolute;
+  top: -300px;
+  left: 50%;
+  width: 770px;
+  padding: 60px 35px;
+  font-size: 18px;
+  background: #fff;
+  color: #2c4058;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  .contacts {
+    top: -70%;
+    width: 100%;
+    padding: 30px;
+  }
+}
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 767px) {
+  .contacts__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.contacts__item {
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  .contacts__item {
+    padding: 10px 0;
+  }
+}
+.contacts__contact, .contacts__form {
+  width: 50%;
+  padding: 0 25px;
+}
+@media (max-width: 767px) {
+  .contacts__contact, .contacts__form {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+.contacts__icon {
+  margin-right: 10px;
+  color: #7e5aff;
+}
+.contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form__input-holder {
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  .form__input-holder {
+    padding: 10px 0;
+  }
+}
+.form__btn-holder {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+@media (max-width: 767px) {
+  .form__btn-holder {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.form input {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding-bottom: 14px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgba(44, 64, 88, 0.2);
+  font-size: 18px;
+  line-height: 1.5;
+}
+.form input::-webkit-input-placeholder {
+  color: rgba(44, 64, 88, 0.5);
+}
+.form input::-moz-placeholder {
+  color: rgba(44, 64, 88, 0.5);
+}
+.form input:-ms-input-placeholder {
+  color: rgba(44, 64, 88, 0.5);
+}
+.form input::-ms-input-placeholder {
+  color: rgba(44, 64, 88, 0.5);
+}
+.form input::placeholder {
+  color: rgba(44, 64, 88, 0.5);
+}
+.form input:focus {
+  outline: none;
+  border-color: #2c4058;
+  color: #2c4058;
+}
+.form .btn {
+  padding: 11px 34px;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 1023px) {
+  .social__list {
+    padding: 0;
+  }
+}
+.social__item {
+  padding: 0 10px;
+}
+.social__link {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.social__link:hover {
+  border-color: #fff;
+}
+@media (max-width: 1023px) {
+  .social {
+    padding-top: 40px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  color: #2c4058;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
