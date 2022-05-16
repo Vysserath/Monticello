@@ -1,0 +1,199 @@
+.news {
+    padding: 135px 0 143px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: $montserrat;
+
+    @include breakpoint('md') {
+        padding: 100px 0;
+    }
+
+    .section-title {
+
+        &:before {
+            background-color: #fff;
+        }
+    }
+
+    .container {
+        max-width: 1370px;
+        position: relative;
+
+        .swiper {
+            max-width: 1170px;
+            width: 90%;
+            height: auto;
+
+            @include breakpoint('lg') {
+                width: 80%;
+            }
+
+            @include breakpoint('md') {
+                width: 60%;
+            }
+        }
+
+        .swiper-link:hover {
+            .card-title {
+                color: $light-blue;
+            }
+        }
+
+        .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            border: 1px solid $white;
+            border-radius: 50%;
+        }
+
+        .swiper-button-next::after {
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid $white;
+            border-left: 1px solid $white;
+            width:8px;
+            height: 8px;
+            right: 16px;
+            transform: rotate(-133deg);
+        }
+
+        .swiper-button-prev {
+            width: 40px;
+            height: 40px;
+            border: 1px solid $white;
+            border-radius: 50%;
+        }
+
+        .swiper-button-prev::after {
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid $white;
+            border-left: 1px solid $white;
+            width:8px;
+            height: 8px;
+            left: 16px;
+            transform: rotate(50deg);   
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: -70px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border: 1px solid $white;
+            background: transparent;
+            margin: 0 20px;
+
+            @include breakpoint('lg') {
+                margin: 0 15px;
+            }
+
+            @include breakpoint('sm') {
+                margin: 0 10px;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $white;
+        }
+
+        .card {
+            background-color: $white;
+            color: $navy;
+    
+            .img-holder {
+                margin-bottom: 30px;
+            }
+    
+            .text-holder {
+                padding: 0 20px 30px 20px;
+
+                @include breakpoint('xl') {
+                    padding: 0 10px 20px 10px;
+                }
+    
+                .card-title {
+                    font-size: 22px;
+                    line-height: 27px;
+                    margin-bottom: 15px;
+                    transition: all ease-in-out 0.3s;
+
+                    @include breakpoint('sm') {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+    
+                .card-text {
+                    font-family: $open-sans;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 40px;
+
+                    @include breakpoint('sm') {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            .card-footer.flex {
+                justify-content: flex-start;
+                align-items: center;
+
+                @include breakpoint('sm') {
+                    align-items: flex-start;
+                }
+                
+                .img-holder {
+                    width: 60px;
+
+                    @include breakpoint('sm') {
+                        width: 50px;
+                    }
+
+                    .card-img {
+                        border-radius: 50%;
+                    }
+                }
+
+                .text-holder {
+
+                    @include breakpoint('xl') {
+                        padding: 0 0 0 15px;
+                    }
+                }
+
+                span {
+                    display: block;
+                }
+
+                .user-name {
+                    font-size: 18px;
+                    margin-bottom: 6px;
+
+                    @include breakpoint('lg') {
+                        font-size:14px;
+                    }
+
+                    @include breakpoint('sm') {
+                        font-size:12px;
+                    }
+                }
+
+                .date {
+                    color: $light-blue;
+                    font-size: 14px;
+
+                    @include breakpoint('sm') {
+                        font-size:10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+.main-title {
+  position: relative;
+  text-align: center;
+  padding: 40px 0 25px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background: $navy;
+  }
+}
+
+.logo {
+  width: 241px;
+}
+
+.footer {
+  font-family: $montserrat;
+  position: relative;
+  padding-top: 241px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  color: $white;
+
+  .container_flex {
+    justify-content: space-between;
+
+    @include breakpoint(lg) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__copyright {
+    font-size: 14px;
+    padding-top: 40px;
+    @include breakpoint(lg) {
+      text-align: center;
+    }
+  }
+}
+.contacts {
+  position: absolute;
+  top: -300px;
+  left: 50%;
+
+  width: 770px;
+  padding: 60px 35px;
+
+  font-size: 18px;
+  background: $white;
+  color: $navy;
+
+  transform: translateX(-50%);
+  @include breakpoint(md) {
+    top: -70%;
+    width: 100%;
+    padding: 30px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include breakpoint(md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__item {
+    padding: 20px 0;
+    @include breakpoint(md) {
+      padding: 10px 0;
+    }
+  }
+  &__contact,
+  &__form {
+    width: 50%;
+    padding: 0 25px;
+    @include breakpoint(md) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    color: $violet;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.form {
+  &__input-holder {
+    padding: 20px 0;
+    @include breakpoint(md) {
+      padding: 10px 0;
+    }
+  }
+  &__btn-holder {
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    @include breakpoint(md) {
+      justify-content: center;
+    }
+  }
+  input {
+    font-family: $montserrat;
+    width: 100%;
+    padding-bottom: 14px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(44, 64, 88, 0.2);
+    font-size: 18px;
+    line-height: 1.5;
+    &::placeholder {
+      color: rgba(44, 64, 88, 0.5);
+    }
+    &:focus {
+      outline: none;
+      border-color: $navy;
+      color: $navy;
+    }
+  }
+  .btn {
+    padding: 11px 34px;
+  }
+}
+.social {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(lg) {
+      padding: 0;
+    }
+  }
+  &__item {
+    padding: 0 10px;
+  }
+  &__link {
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all;
+    &:hover {
+      border-color: $white;
+    }
+  }
+  @include breakpoint(lg) {
+    padding-top: 40px;
+  }
+}

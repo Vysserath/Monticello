@@ -8,21 +8,307 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- LYUBA -->
+    <link rel="stylesheet" href="src/icon/style.css" />
     <link rel="stylesheet" href="src/css/main.css">
     <title>Monticello</title>
+    <script src="src/js/map.js" defer></script>
+
 </head>
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <img src="src/img/logo.svg" alt="image description" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#news" class="nav-link">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-header">
+                <ul class="social__list">
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <span class="icon-facebook"></span>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <span class="icon-twitter"></span>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <span class="icon-instagram"></span>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <button class="nav-opener">
+            <span></span>
+        </button>
+    </header>
 
     <main class="main">
-        <section class="gallery">
+        <section class="hero-section" style="background-image: url('src/img/header-background.jpg');">
+            <div class="container">
+                <div class="text-holder">
+                    <h1 class="hero-title">SIMPLE & MODERN</h1>
+                    <span class="title-description">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                </div>
+                <div class="scroll-holder">
+                    <a href="#" class="scroll-link">
+                        <span class="scroll-btn"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="title-holder">
+                <h2 class="section-title">WHAT WE DO</h2>
+            </div>
+            <div class="card">
+                <div class="container container_flex">
+                    <div class="img-holder">
+                        <img src="src/img/trade-center.jpg" alt="image description" class="card-img">
+                    </div>
+                    <div class="text-holder">
+                        <span class="pre-title">ONE WORLD</span>
+                        <h3 class="card-title">TRADE CENTER</h3>
+                        <p class="card-text">
+                            Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+                            The truth is, our thoughts are very powerful.
+                        </p>
+                        <a href="#" class="btn">MORE DETAILS</a>
+                        <a href="#" class="map-link"><span class="icon-location"></span> <em>New York City, United States - 1776 feet</em></a>
+                    </div>    
+                </div>
+                <div class="bg bg-blue"></div>
+            </div>
+            <div class="card">
+                <div class="container container_flex">
+                    <div class="img-holder">
+                        <img src="src/img/commerce-centre.jpg" alt="image description" class="card-img">
+                    </div>
+                    <div class="text-holder">
+                        <span class="pre-title">INTERNATIONAL</span>
+                        <h3 class="card-title">COMMERCE CENTRE</h3>
+                        <p class="card-text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                        <a href="#" class="btn">MORE DETAILS</a>
+                        <a href="#" class="map-link"><span class="icon-location"></span> <em>Hong Kong - 1588 feet</em></a>
+                    </div>
+                </div>
+                <div class="bg bg-violet"></div>
+            </div>
+        </section>
+
+        <section class="news" id="news" style="background-image: url(src/img/news-background.jpg);">
+            <div class="title-holder">
+                <h2 class="section-title">LATEST NEWS</h2>
+            </div>
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper-link">
+                                <div class="card">
+                                    <div class="img-holder">
+                                        <img src="src/img/news_1.jpg" alt="image description" class="card-img">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                                        <p class="card-text">
+                                            Free directories: directories are perfect for customers that are searching for...
+                                        </p>
+                                        <div class="card-footer flex">
+                                            <div class="img-holder">
+                                                <img src="src/img/news_author_1.jpg" alt="image description" class="card-img">
+                                            </div>
+                                            <div class="text-holder">
+                                                <span class="user-name">ALJA BRUN</span>
+                                                <span class="date">20 Jan 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper-link">
+                                <div class="card">
+                                    <div class="img-holder">
+                                        <img src="src/img/news_2.jpg" alt="image description" class="card-img">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3 class="card-title">EFFECTIVE ADVERTISING POINTERS.</h3>
+                                        <p class="card-text">
+                                            Having a home based business is a wonderful asset to your life...
+                                        </p>
+                                        <div class="card-footer flex">
+                                            <div class="img-holder">
+                                                <img src="src/img/news_author_2.jpg" alt="image description" class="card-img">
+                                            </div>
+                                            <div class="text-holder">
+                                                <span class="user-name">DOMINIC FREEMAN</span>
+                                                <span class="date">13 Dec 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper-link">
+                                <div class="card">
+                                    <div class="img-holder">
+                                        <img src="src/img/news_3.jpg" alt="image description" class="card-img">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3 class="card-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                                        <p class="card-text">
+                                            There are many things that are important to catalog design...
+                                        </p>
+                                        <div class="card-footer flex">
+                                            <div class="img-holder">
+                                                <img src="src/img/news_author_3.jpg" alt="image description" class="card-img">
+                                            </div>
+                                            <div class="text-holder">
+                                                <span class="user-name">ALICE WARD</span>
+                                                <span class="date">30 Nov 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper-link">
+                                <div class="card">
+                                    <div class="img-holder">
+                                        <img src="src/img/news_1.jpg" alt="image description" class="card-img">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                                        <p class="card-text">
+                                            Free directories: directories are perfect for customers that are searching for...
+                                        </p>
+                                        <div class="card-footer flex">
+                                            <div class="img-holder">
+                                                <img src="src/img/news_author_1.jpg" alt="image description" class="card-img">
+                                            </div>
+                                            <div class="text-holder">
+                                                <span class="user-name">ALJA BRUN</span>
+                                                <span class="date">20 Jan 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper-link">
+                                <div class="card">
+                                    <div class="img-holder">
+                                        <img src="src/img/news_2.jpg" alt="image description" class="card-img">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3 class="card-title">EFFECTIVE ADVERTISING POINTERS.</h3>
+                                        <p class="card-text">
+                                            Having a home based business is a wonderful asset to your life...
+                                        </p>
+                                        <div class="card-footer flex">
+                                            <div class="img-holder">
+                                                <img src="src/img/news_author_2.jpg" alt="image description" class="card-img">
+                                            </div>
+                                            <div class="text-holder">
+                                                <span class="user-name">DOMINIC FREEMAN</span>
+                                                <span class="date">13 Dec 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper-link">
+                                <div class="card">
+                                    <div class="img-holder">
+                                        <img src="src/img/news_3.jpg" alt="image description" class="card-img">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3 class="card-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                                        <p class="card-text">
+                                            There are many things that are important to catalog design...
+                                        </p>
+                                        <div class="card-footer flex">
+                                            <div class="img-holder">
+                                                <img src="src/img/news_author_3.jpg" alt="image description" class="card-img">
+                                            </div>
+                                            <div class="text-holder">
+                                                <span class="user-name">ALICE WARD</span>
+                                                <span class="date">30 Nov 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper-link">
+                                <div class="card">
+                                    <div class="img-holder">
+                                        <img src="src/img/news_1.jpg" alt="image description" class="card-img">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3 class="card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                                        <p class="card-text">
+                                            Free directories: directories are perfect for customers that are searching for...
+                                        </p>
+                                        <div class="card-footer flex">
+                                            <div class="img-holder">
+                                                <img src="src/img/news_author_1.jpg" alt="image description" class="card-img">
+                                            </div>
+                                            <div class="text-holder">
+                                                <span class="user-name">ALJA BRUN</span>
+                                                <span class="date">20 Jan 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>     
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
             <div class="container">
                 <h2 class="gallery__title">GALLERY</h2>
                 <div class="container container_flex">
-                    <div class="gallery__img-holder">
+                    <div class="gallery__img-holder gallery__img-holder_main">
                         <img src="src/img/gallery_1.jpg" alt="img">
                     </div>
-                    <div class="gallery__img-holder gallery__img-holder_flex">
+                    <div class="gallery__img-holder gallery__img-holder_main gallery__img-holder_flex">
                         <div class="gallery__img-holder">
                             <img src="src/img/gallery_2.jpg" alt="img">
                         </div>
@@ -37,14 +323,92 @@
                         </div>
                     </div>
                 </div>
-                <a class="gallery__btn" href="#">SEE MORE</a>
+                <a class="gallery__btn btn" href="#">SEE MORE</a>
             </div>
         </section>
+
+        <section class="map">
+            <div id="map" style="width: 100%; height: 700px"></div>
+          </section>
+
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer" style="background-image: url('src/img/footer-background.jpg')">
+        <section class="footer__contacts contacts" id="contacts">
+          <h1 class="main-title">GET IN TOUCH</h1>
+          <div class="contacts__wrapper">
+            <div class="contacts__contact">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <span class="contacts__icon icon-location"></span> 91 Nolan
+                  Extensions Suite 670
+                </li>
+                <li class="contacts__item">
+                  <span class="contacts__icon icon-phone"></span> +001
+                  356-868-2454
+                </li>
+                <li class="contacts__item">
+                  <span class="contacts__icon icon-drawer2"></span>
+                  montichello@service.com
+                </li>
+                <li class="contacts__item">
+                  <span class="contacts__icon icon-clock"></span> From 07:05AM to
+                  19:30PM
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__form">
+              <form action="#" class="form">
+                <div class="form__input-holder">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="form__input-holder">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form__btn-holder">
+                  <button type="submit" class="btn btn_outline form__submit">
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="container container_flex">
+          <div class="footer__logo-holder logo">
+            <a href="" class="logo__link">
+              <img class="logo__img" src="src/img/logo.svg" alt="logo" />
+            </a>
+            <p class="footer__copyright">Copyrights © 2020 Montichello</p>
+          </div>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="icon-facebook"></span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="icon-twitter"></span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="icon-instagram"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </footer>
 
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/script.js"></script>
 </body>

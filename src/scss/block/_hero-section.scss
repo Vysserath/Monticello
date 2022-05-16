@@ -1,0 +1,63 @@
+.hero-section{
+    padding: 223px 0 50px;
+}
+
+.hero-title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    color: $white;
+    text-align: center;
+    padding: 0 0 20px;
+
+    @include breakpoint ('md'){
+        font-size: 40px;
+        padding: 0 0 10px;
+    }
+
+    @include breakpoint ('sm'){
+        font-size: 40px;
+    }
+
+    @include breakpoint ('xs'){
+        font-size: 30px;
+    }
+}
+
+.title-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+    display: block;
+    text-align: center;
+    padding: 0 0 240px;
+
+    @include breakpoint('sm'){
+        font-size: 10px;
+    }
+}
+
+.scroll-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// .scroll-link{
+//     border: 1px solid white;
+//     border-radius: 50%;
+//     padding: 15px 16px;
+    
+// }
+
+.scroll-btn{
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-left: 1px solid $white;
+    border-bottom: 1px solid $white;
+    transform:rotate(-45deg);
+}
+
