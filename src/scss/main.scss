@@ -1,5 +1,10 @@
 @import 'mixins';
 @import 'var';
+// global (lera-dobro)
+@import 'base/global';
+@import 'base/icons';  
+@import 'blocks/about';
+@import 'blocks/news';
 
 *,
 *::before,
