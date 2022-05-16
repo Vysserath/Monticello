@@ -682,7 +682,7 @@
             transform: translateX(-100%);
     -webkit-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
-    margin: 0 -120px;
+    margin: 0 -115px;
   }
 }
 .nav-list {
