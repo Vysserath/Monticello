@@ -1,12 +1,13 @@
 @import 'mixins';
 @import 'var';
+@import 'block/header';
+@import 'block/hero-section';
+@import 'block/about';
+@import 'block/news';
 @import 'block/gallery';
 @import "block/map";
 @import "block/footer";
-@import 'block/about';
-@import 'block/news';
-@import 'block/header';
-@import 'block/hero-section';
+
 
 *,
 *::before,

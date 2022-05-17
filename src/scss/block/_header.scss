@@ -1,9 +1,12 @@
 .header{
     position: absolute;
-    width: 100%;
+    // width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
     padding: 53px 0;
-    overflow: hidden;
+    // overflow: hidden;
 
     &.active{
         nav{
@@ -23,7 +26,7 @@
             &::after{
                 bottom:50%;
                 left:50%;
-                transform: translate(-50%,-50%) rotate(-45deg);
+                transform: translate(-50%, 50%) rotate(-45deg);
             }
         }
     }
@@ -56,24 +59,27 @@
 }
 
 .nav{
-    margin: 0 -70px;
+    // margin: 0 -70px;
+
     @include breakpoint ('md'){
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 0;
         right: 0;
-        width: 100%;
+        left: 0;
+        // width: 100%;
         z-index: 2;
         transform: translateX(-100%);
         transition: all ease-in-out 0.3s;
-        margin: 0 -115px;
+        // margin: 0 -115px;
     }
 
     &-list{
         display: flex;
         flex-wrap: wrap;
         color:$white;
+
         @include breakpoint ('md'){
             display: flex;
             flex-direction: column;
@@ -87,7 +93,8 @@
         padding: 0 70px 0 0;
 
         @include breakpoint ('md'){
-            width: 100%;
+            // width: 100%;
+            padding: 0;
         }
 
         &:hover .nav-link::before {
@@ -128,13 +135,14 @@
         @include breakpoint ('md'){
             display: block;
             text-align: center;
-            padding: 10px;
+            // padding: 10px;
+            padding: 20px 0;
         }
     }
 }
 
 .social-header{
-    margin:0 -20px;
+    // margin:0 -20px;
     @include breakpoint ('lg'){
         display: none;
     }
